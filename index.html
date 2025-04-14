@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desmond Craft Works</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffefc;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, gold, silver);
+            color: black;
+            padding: 20px;
+            text-align: center;
+            animation: slideInDown 1s ease-out;
+        }
+        header img {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .scroll-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        .scroll-gallery img {
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+        .scroll-gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="desmond_logo.png" alt="Desmond Craft Works Logo">
+        <h1>Desmond Craft Works</h1>
+        <p>Custom Furniture | Wood | Metal | Glass | Textile</p>
+    </header>
+    <section class="section">
+        <h2>Our Work</h2>
+        <p>We design and build beds, chairs, wardrobes, center tables, TV units, office tables, counters, doors, shoe racks, and more — tailored to your vision.</p>
+        <div class="scroll-gallery">
+            <img src="photo_1.jpg" alt="Furniture photo"><img src="photo_2.jpg" alt="Furniture photo"><img src="photo_3.jpg" alt="Furniture photo"><img src="photo_4.jpg" alt="Furniture photo">
+        </div>
+    </section>
+    <section class="section">
+        <h2>Contact Us</h2>
+        <p>Location: Mukono, Nakabago Road</p>
+        <p>WhatsApp: 0784075604 | 0740511760</p>
+        <p>Email: dezmondtim@gmail.com</p>
+    </section>
+    <footer>
+        &copy; 2025 Desmond Craft Works. All rights reserved.
+    </footer>
+</body>
+</html>
